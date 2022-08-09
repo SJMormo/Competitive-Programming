@@ -20,7 +20,6 @@ void fastio()
 #endif
 }
 
-#define sz(a) int((a).size())
 
 void solve()
 {
