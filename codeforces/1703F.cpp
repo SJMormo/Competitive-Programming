@@ -47,6 +47,7 @@ void solve()
 			continue;
 		res += cnt[i];
 	}
+
 	cout << res << '\n';
 }
 
