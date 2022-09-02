@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void primes(int n)
+void sieve(int n)
 {
     vector<int> prime(n + 1, 1); // prime[1] are the primes
 
@@ -24,7 +24,7 @@ int main()
     int n;
     cin >> n;
 
-    primes(n);
+    sieve(n);
 
     return 0;
 }
