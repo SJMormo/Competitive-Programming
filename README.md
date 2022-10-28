@@ -10,6 +10,9 @@
 | [Elections-1593A](https://codeforces.com/contest/1593/problem/A) | 13-06-2022 |
 | [Circle Metro-1169A](https://codeforces.com/contest/1169/problem/A) | 12-07-2022 |
 | [Many Equal Substrings-1029A](https://codeforces.com/contest/1029/problem/A) | 28-07-2022 |
+| [Permutation Operations-1746C](https://codeforces.com/contest/1746/problem/C) | 21-10-2022 |
+| [Good Subarrays-1436C1](https://codeforces.com/problemset/problem/1736/C1) | 25-10-2022 |
+| [3Sum Closure-1698C](https://codeforces.com/problemset/problem/1698/C) | 28-10-2022 |
 
 
 ### Very Nice Techniques
