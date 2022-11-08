@@ -13,6 +13,7 @@
 | [Permutation Operations-1746C](https://codeforces.com/contest/1746/problem/C) | 21-10-2022 |
 | [Good Subarrays-1436C1](https://codeforces.com/problemset/problem/1736/C1) | 25-10-2022 |
 | [3Sum Closure-1698C](https://codeforces.com/problemset/problem/1698/C) | 28-10-2022 |
+| [Directional Increase-1693A](https://codeforces.com/problemset/problem/1693/A) | 08-11-2022 |
 
 
 ### Very Nice Techniques
