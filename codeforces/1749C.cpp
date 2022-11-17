@@ -22,29 +22,39 @@ void solve()
 	int n;
 	cin >> n;
 
-	vector<int> v(n);
+	multiset<int> v;
 	for (int i = 0; i < n; i++)
-		cin >> v[i];
-
-	int ans = 0;
-	for (int j = 1; v.size() > 1; j *= 2)
 	{
-		vector<int>temp;
-		for (int i = 0; i < v.size(); i += 2)
+		int x;
+		cin >> x;
+
+		v.insert(x);
+	}
+
+	for (int k = 1; ; k++)
+	{
+		multiset <int> temp;
+		temp = v;
+
+		for (int i = k; i > 0; i--)
 		{
-			if (abs(v[i] - v[i + 1]) != j)
+			auto it = temp.upper_bound(i);
+			if (it == temp.begin())
 			{
-				cout << -1 << '\n';
+				cout << k - 1 << '\n';
 				return;
 			}
-			int mn = min(v[i], v[i + 1]);
-			if (v[i] > v[i + 1])
-				ans++;
-			temp.push_back(mn);
+			it--;
+			temp.erase(it);
+
+			if (temp.size() == 0)
+				continue;
+			it = temp.begin();
+			int x = *it + k;
+			temp.erase(it);
+			temp.insert(x);
 		}
-		v = temp;
 	}
-	cout << ans << '\n';
 }
 
 int main()

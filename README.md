@@ -14,6 +14,9 @@
 | [Good Subarrays-1436C1](https://codeforces.com/problemset/problem/1736/C1) | 25-10-2022 |
 | [3Sum Closure-1698C](https://codeforces.com/problemset/problem/1698/C) | 28-10-2022 |
 | [Directional Increase-1693A](https://codeforces.com/problemset/problem/1693/A) | 08-11-2022 |
+| [Masha and a Beautiful Tree-1741D](https://codeforces.com/contest/1741/problem/D) | 17-11-2022 |
+| [Number Game-1741D](https://codeforces.com/contest/1749/problem/C) | 17-11-2022 |
+
 
 
 ### Very Nice Techniques
