@@ -16,6 +16,7 @@
 | [Directional Increase-1693A](https://codeforces.com/problemset/problem/1693/A) | 08-11-2022 |
 | [Masha and a Beautiful Tree-1741D](https://codeforces.com/contest/1741/problem/D) | 17-11-2022 |
 | [Number Game-1741D](https://codeforces.com/contest/1749/problem/C) | 17-11-2022 |
+| [Bricks and Bags-1740C](https://codeforces.com/contest/1740/problem/C) | 22-11-2022 |
 
 
 
