@@ -26,10 +26,7 @@ void solve()
 	vector<int> track(n + 1, 0);
 	for (int i = 0; i < n; i++) {
 		int a = x % n;
-		v[i] -= a;
-		if (v[i] < 0) {
-			v[i] = n - abs(v[i]);
-		}
+		v[i] = (v[i] - a + n) % n;
 		x++;
 
 		track[v[i] % n]++;
