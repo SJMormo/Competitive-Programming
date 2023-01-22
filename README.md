@@ -22,8 +22,9 @@
 
 ### Very Nice Techniques
 
-| Issue | Resource | Related Problem | 
+| Issue | Resource/Idea | Related Problem | 
 | :-: | :-: | :-: |
 | Rotate square matrix in anti-clockwise direction by 90 degrees | [gfg link](https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/) | [cf - Mirror Grid](https://codeforces.com/contest/1703/problem/E) |
 | Rotate square matrix in clockwise direction by 90 degrees | [gfg link](https://www.geeksforgeeks.org/rotate-a-matrix-by-90-degree-in-clockwise-direction-without-using-any-extra-space/) | Same |
 | For very large number like 10e18, determine the floor of square root using Binary Search. Built-in function sqrt may give wrong answer | None | [My code](https://github.com/SJMormo/competitive-programming/blob/main/codeforces/1737B.cpp) |
+| Minimum swaps needed to sort a permutation | Let's build a directed graph with n vertices where the i-th vertex has an outgoing edge i→pi. It is easy to see that the graph is divided up into cycles of the form i→pi→ppi→pppi→…→i. The elements of a particular graph need (total_cycle - 1) swaps to be sorted | [Related Problem](https://codeforces.com/contest/1768/problem/D) |
