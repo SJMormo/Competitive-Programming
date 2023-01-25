@@ -13,54 +13,69 @@ void fastio()
 	cout.tie(NULL);
 }
 
+vector<int> divisors[100001];
 
-set<ll> divisors(ll n, set<ll> s)
+void divisor()
 {
-	for (ll i = 1; i * i <= n; i++) {
-		if (n % i == 0) {
-			s.erase(i);
-			s.erase(n / i);
+	for (int i = 1; i <= 100000; i++) {
+		for (int j = 1; j * j <= i; j++) {
+			if (i % j == 0) {
+				divisors[i].push_back(j);
+				if (j * j != i) {
+					divisors[i].push_back(i / j);
+				}
+			}
 		}
 	}
-	return s;
 }
 
 void solve()
 {
-	ll n, m;
+	int n, m;
 	cin >> n >> m;
 
-	std::vector<ll> v(n);
-	for (ll i = 0; i < n; i++) {
+	vector<int> v(n);
+	for (int i = 0; i < n; i++)
 		cin >> v[i];
-	}
 	sort(v.begin(), v.end());
-	reverse(v.begin(), v.end());
 
-	set<ll> s;
-	for (ll i = 1; i <= m; i++)
-		s.insert(i);
+	int l = 0, r = -1, cnt = 0, ans = INT_MAX;
+	vector<int> freq(m + 1, 0);
 
-	ll x = 0;
-	for (ll i = 0; i < n; i++) {
-		if (v[i] <= m) {
-			s = divisors(v[i], s);
-			cnt++;
+	while (r < n) {
+		if (cnt < m) {
+			r++;
+			if (r == n)
+				break;
+
+			for (auto it : divisors[v[r]]) {
+				if (it > m) continue;
+				freq[it]++;
+				if (freq[it] == 1)
+					cnt++;
+			}
 		}
+		else {
+			ans = min(ans, v[r] - v[l]);
 
-		if (s.empty()) {
-			cout << m - v[i] << '\n';
-			return;
+			for (auto it : divisors[v[l]]) {
+				if (it > m) continue;
+				freq[it]--;
+				if (freq[it] == 0)
+					cnt--;
+			}
+			l++;
 		}
 	}
-
-	cout << -1 << '\n';
+	if (ans == INT_MAX)
+		ans = -1;
+	cout << ans << '\n';
 }
 
 int main()
 {
 	fastio();
-
+	divisor();
 	int t = 1;
 	cin >> t;
 
