@@ -18,6 +18,7 @@
 | [Number Game-1741D](https://codeforces.com/contest/1749/problem/C) | 17-11-2022 |
 | [Bricks and Bags-1740C](https://codeforces.com/contest/1740/problem/C) | 22-11-2022 |
 | [Orray-1742G](https://codeforces.com/contest/1742/problem/G) | 26-01-2023 |
+| [Absolute Sorting-1772D](https://codeforces.com/contest/1772/problem/D) | 26-01-2023 |
 
 
 
