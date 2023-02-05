@@ -2,7 +2,6 @@ class Solution {
 public:
 	string longestCommonPrefix(vector<string>& strs) {
 		string ans = strs[0];
-		// cout << ans << '\n';
 		for (int i = 1; i < strs.size(); i++) {
 			if (strs[i].size() == 0) {
 				ans = "";
