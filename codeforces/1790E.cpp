@@ -24,20 +24,27 @@ void solve()
 	ll n;
 	cin >> n;
 
-	bool indi = true;
+	ll sum = (n << 1);
+
+	// bool indi = true;
 
 	ll a = n, b = 0;
-	for (ll i = 32; i >= 0; i--) {
-		ll k = checkbit(n, i);
-		if (k) indi = false;
-		if (indi || k) continue;
+	for (ll i = 31; i >= 0; i--) {
+		ll value = (1ll << i);
 
-		a = setbit(a, i);
-		b = setbit(b, i);
+		if (checkbit(a, i)) {
+			sum -= value;
+			continue;
+		}
 
-		// cout << a << ' ' << b << endl;
+		value = (value << 1);
+		if (value <= sum) {
+			a = setbit(a, i);
+			b = setbit(b, i);
+			sum -= value;
+		}
 
-		if (a ^ b == n && (a + b) == 2 * n) {
+		if (sum == 0 && (a ^ b) == n) {
 			cout << a << ' ' << b << '\n';
 			return;
 		}
