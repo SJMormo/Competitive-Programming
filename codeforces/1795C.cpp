@@ -20,7 +20,7 @@ void solve()
 	for (ll i = 1; i <= n; i++) cin >> a[i];
 	for (ll i = 1; i <= n; i++) cin >> b[i];
 
-	vector<ll> cumsum(n + 1, 0), cnt(n + 5, 0), add(n + 10, 0);
+	vector<ll> cumsum(n + 1, 0), cnt(n + 2, 0), add(n + 2, 0);
 	for (ll i = 1; i <= n; i++) cumsum[i] = cumsum[i - 1] + b[i];
 
 	for (ll i = 1; i <= n; i++) {
