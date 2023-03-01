@@ -21,6 +21,7 @@
 | [Absolute Sorting-1772D](https://codeforces.com/contest/1772/problem/D) | 26-01-2023 |
 | [(Very nice binary search problem)Tea Tasting-1795C](https://codeforces.com/contest/1795/problem/C) | 19-02-2023 |
 | [Min Max Sort-1792C](https://codeforces.com/contest/1792/problem/C) | 21-02-2023 |
+| [(Very nice binary search problem)Maximum Set-1796C](https://codeforces.com/contest/1796/problem/C) | 01-03-2023 |
 
 
 
