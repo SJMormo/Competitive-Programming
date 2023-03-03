@@ -17,28 +17,38 @@ int mod = 998244353;
 
 void solve()
 {
+	// int n;
+	// cin >> n;
+	// vector<int> v(n);
+
+	// for (int i = 0; i < n; i++) {
+	// 	cin >> v[i];
+	// }
+
+	// int ans = n / 3 * (n / 3 - 1);
+	// cout << ans << endl;
+	// for (int i = 0; i < n; i += 3) {
+	// 	vector<int> track;
+	// 	for (int j = i; j < i + 3; j++) {
+	// 		track.push_back(v[j]);
+	// 	}
+	// 	sort(track.begin(), track.end());
+	// 	if (track[0] == track[1] and track[1] == track[2]) ans *= 3;
+	// 	else if (track[0] == track[1]) ans *= 2;
+	// }
+
+	// // ans /= 2;
+	// cout << ans << '\n';
+
 	int n;
 	cin >> n;
 	vector<int> v(n);
-
-	for (int i = 0; i < n; i++) {
-		cin >> v[i];
+	for (auto &it : v) {
+		cin >> it;
+		cout << it << endl;
 	}
 
-	int ans = n / 3 * (n / 3 - 1);
-	cout << ans << endl;
-	for (int i = 0; i < n; i += 3) {
-		vector<int> track;
-		for (int j = i; j < i + 3; j++) {
-			track.push_back(v[j]);
-		}
-		sort(track.begin(), track.end());
-		if (track[0] == track[1] and track[1] == track[2]) ans *= 3;
-		else if (track[0] == track[1]) ans *= 2;
-	}
-
-	// ans /= 2;
-	cout << ans << '\n';
+	for (auto it : v) cout << it << endl;
 }
 
 int main()
