@@ -15,40 +15,45 @@ void fastio()
 
 int mod = 998244353;
 
-void solve()
+ll
+
+long long nCr (long long n, long long r)
 {
-	// int n;
-	// cin >> n;
-	// vector<int> v(n);
+	long long p = 1, k = 1;
+	if (n - r < r)
+		r = n - r;
 
-	// for (int i = 0; i < n; i++) {
-	// 	cin >> v[i];
-	// }
-
-	// int ans = n / 3 * (n / 3 - 1);
-	// cout << ans << endl;
-	// for (int i = 0; i < n; i += 3) {
-	// 	vector<int> track;
-	// 	for (int j = i; j < i + 3; j++) {
-	// 		track.push_back(v[j]);
-	// 	}
-	// 	sort(track.begin(), track.end());
-	// 	if (track[0] == track[1] and track[1] == track[2]) ans *= 3;
-	// 	else if (track[0] == track[1]) ans *= 2;
-	// }
-
-	// // ans /= 2;
-	// cout << ans << '\n';
-
-	int n;
-	cin >> n;
-	vector<int> v(n);
-	for (auto &it : v) {
-		cin >> it;
-		cout << it << endl;
+	while (r) {
+		p *= n;
+		k *= r;
+		long long gcd = __gcd(p, k);
+		p /= gcd;
+		k /= gcd;
+		--n;
+		--r;
 	}
 
-	for (auto it : v) cout << it << endl;
+	return p;
+}
+
+void solve()
+{
+	ll n;
+	cin >> n;
+
+	n /= 3;
+
+	ll ans = nCr(n, n / 2);
+
+	for (ll i = 0; i < n; i++) {
+		vector <ll> v(3);
+		for (auto &it : v) cin >> it;
+		sort(v.begin(), v.end());
+		if (v[0] == v[2]) ans *= 3;
+		else if (v[0] == v[1]) ans *= 2;
+	}
+
+	cout << ans << '\n';
 }
 
 int main()
