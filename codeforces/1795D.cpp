@@ -13,9 +13,41 @@ void fastio()
 	cout.tie(NULL);
 }
 
-int mod = 998244353;
+ll mod = 998244353;
 
-ll
+ll add(ll a, ll b)
+{
+	return ((a + b) % mod + mod) % mod;
+}
+
+ll mul(ll a, ll b)
+{
+	return (a * b) % mod;
+}
+
+ll binpow(ll a, ll b)
+{
+	a %= mod;
+	long long res = 1;
+
+	while (b > 0) {
+		if (b & 1)
+			res = res * a % mod;
+		a = a * a % mod;
+		b >>= 1;
+	}
+	return res;
+}
+
+ll inv(ll a)
+{
+	return binpow(a, mod - 2);
+}
+
+ll divide(ll a, ll b)
+{
+	return mul(a, inv(b));
+}
 
 long long nCr (long long n, long long r)
 {
@@ -24,16 +56,16 @@ long long nCr (long long n, long long r)
 		r = n - r;
 
 	while (r) {
-		p *= n;
-		k *= r;
+		p = mul(p, n);
+		k = mul(k, r);
 		long long gcd = __gcd(p, k);
-		p /= gcd;
-		k /= gcd;
-		--n;
-		--r;
+		p = divide(p, gcd);
+		k = divide(k, gcd);
+		n = add(n, -1);
+		r = add(r, -1);
 	}
 
-	return p;
+	return p % mod;
 }
 
 void solve()
@@ -41,16 +73,20 @@ void solve()
 	ll n;
 	cin >> n;
 
+	ll ans = nCr(n / 3, n / 6);
+
+	// ll ans = 1;
+
+	// for (ll i = 1; i <= n / 6; i++)
+	// 	ans = mul(ans, divide(i + n / 6, i));
+
 	n /= 3;
-
-	ll ans = nCr(n, n / 2);
-
 	for (ll i = 0; i < n; i++) {
 		vector <ll> v(3);
 		for (auto &it : v) cin >> it;
 		sort(v.begin(), v.end());
-		if (v[0] == v[2]) ans *= 3;
-		else if (v[0] == v[1]) ans *= 2;
+		if (v[0] == v[2]) ans = mul(ans, 3);
+		else if (v[0] == v[1]) ans = mul(ans, 2);
 	}
 
 	cout << ans << '\n';
