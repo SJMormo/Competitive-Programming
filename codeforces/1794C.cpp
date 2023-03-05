@@ -15,6 +15,27 @@ void fastio()
 
 void solve()
 {
+	int n;
+	cin >> n;
+
+	vector<int> v(n);
+	multiset <int> ms;
+	for (auto &it : v) {
+		cin >> it;
+
+		if (ms.empty())
+			ms.insert(it);
+		else {
+			ms.insert(it);
+			int sz = ms.size();
+			int x = *ms.begin();
+			if (x < sz)
+				ms.erase(ms.begin());
+			// cout << *ms.begin() << endl;
+		}
+		cout << ms.size() << ' ';
+	}
+	cout << '\n';
 
 }
 
