@@ -49,36 +49,20 @@ ll divide(ll a, ll b)
 	return mul(a, inv(b));
 }
 
-long long nCr (long long n, long long r)
-{
-	long long p = 1, k = 1;
-	if (n - r < r)
-		r = n - r;
-
-	while (r) {
-		p = mul(p, n);
-		k = mul(k, r);
-		long long gcd = __gcd(p, k);
-		p = divide(p, gcd);
-		k = divide(k, gcd);
-		n = add(n, -1);
-		r = add(r, -1);
-	}
-
-	return p % mod;
-}
-
 void solve()
 {
 	ll n;
 	cin >> n;
 
-	ll ans = nCr(n / 3, n / 6);
+	ll ans = 1;
 
-	// ll ans = 1;
-
-	// for (ll i = 1; i <= n / 6; i++)
-	// 	ans = mul(ans, divide(i + n / 6, i));
+	for (ll i = 1; i <= n / 3; i++) {
+		ans = mul(ans, i);
+	}
+	for (ll i = 1; i <= n / 6; i++) {
+		ans = divide(ans, i);
+		ans = divide(ans, i);
+	}
 
 	n /= 3;
 	for (ll i = 0; i < n; i++) {
