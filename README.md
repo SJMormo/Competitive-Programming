@@ -23,6 +23,7 @@
 | [Min Max Sort-1792C](https://codeforces.com/contest/1792/problem/C) | 21-02-2023 |
 | [(Very nice binary search problem)Maximum Set-1796C](https://codeforces.com/contest/1796/problem/C) | 01-03-2023 |
 | [Scoring Subsequences-1795C](https://codeforces.com/contest/1794/problem/C) | 05-03-2023 |
+| [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 26-03-2023 |
 
 
 
