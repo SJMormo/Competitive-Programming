@@ -13,14 +13,13 @@ public:
 				curr++;
 			}
 			else {
-				curr = i - max(last_pos[s[i]], pos_cnt_from);
 				pos_cnt_from = max(pos_cnt_from, last_pos[s[i]]);
+				curr = i - pos_cnt_from;
 				last_pos[s[i]] = i;
 			}
 			ans = max(ans, curr);
 			cout << pos_cnt_from << ' ' << curr << ' ' << ans << endl;
 		}
-
 
 		return ans;
 	}
