@@ -26,6 +26,7 @@
 | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
 | [Sequence Master-1806C](https://codeforces.com/contest/1806/problem/C) | 24-03-2023 |
 | [Candy Store-1798C](https://codeforces.com/contest/1798/problem/C) | 28-03-2023 |
+| [Make It Permutation-1810C](https://codeforces.com/contest/1810/problem/C) | 01-04-2023 |
 
 
 
