@@ -32,25 +32,37 @@ void solve()
 	for (ll i = 0; i < m; i++) {
 		ll a, b, c;
 		cin >> a >> b >> c;
-
-
-
-		// mxk
-		ll left = (b - mxk) * (b - mxk);
 		ll right = 4 * a * c;
 
-		if (left < right) {
-			cout << "YES\n" << mxk << '\n';
+
+		ll lb = lower_bound(line.begin(), line.end(), b) - line.begin();
+		// cout << lb << endl;
+		if (lb != n) {
+			ll left = b - line[lb];
+			left *= left;
+			if (left < right) {
+				cout << "YES\n" << line[lb] << '\n';
+				continue;
+			}
+
+			if (lb - 1 >= 0) {
+				left = b - line[lb - 1];
+				left *= left;
+				if (left < right) {
+					cout << "YES\n" << line[lb - 1] << '\n';
+					continue;
+				}
+			}
 		}
 		else {
-			left = (b - mnk) * (b - mnk);
-
+			ll left = b - line[lb - 1];
+			left *= left;
 			if (left < right) {
-				cout << "YES\n" << mnk << '\n';
+				cout << "YES\n" << line[lb - 1] << '\n';
+				continue;
 			}
-			else
-				cout << "NO\n";
 		}
+		cout << "NO\n";
 	}
 
 
