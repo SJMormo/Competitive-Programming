@@ -4,31 +4,31 @@
 
 | Tick | Problem | Date (DD-MM-YYYY) |
 | :-:  | :-: | :-: |
-| - [ ] | [Rotate-Image](https://leetcode.com/problems/rotate-image/) | Try transpose matrix approach |
-| - [x] | [DIY Wooden Ladder-1197A](https://codeforces.com/contest/1197/problem/A) | 13-06-2022 |
-| - [ ] | [Even But Not Even-1291A](https://codeforces.com/contest/1291/problem/A) | 13-06-2022 |
-| - [ ] | [Elections-1593A](https://codeforces.com/contest/1593/problem/A) | 13-06-2022 |
-| - [ ] | [Circle Metro-1169A](https://codeforces.com/contest/1169/problem/A) | 12-07-2022 |
-| - [ ] | [Many Equal Substrings-1029A](https://codeforces.com/contest/1029/problem/A) | 28-07-2022 |
-| - [ ] | [Permutation Operations-1746C](https://codeforces.com/contest/1746/problem/C) | 21-10-2022 |
-| - [ ] | [Good Subarrays-1436C1](https://codeforces.com/problemset/problem/1736/C1) | 25-10-2022 |
-| - [ ] | [3Sum Closure-1698C](https://codeforces.com/problemset/problem/1698/C) | 28-10-2022 |
-| - [ ] | [Directional Increase-1693A](https://codeforces.com/problemset/problem/1693/A) | 08-11-2022 |
-| - [ ] | [Masha and a Beautiful Tree-1741D](https://codeforces.com/contest/1741/problem/D) | 17-11-2022 |
-| - [ ] | [Number Game-1741D](https://codeforces.com/contest/1749/problem/C) | 17-11-2022 |
-| - [ ] | [Bricks and Bags-1740C](https://codeforces.com/contest/1740/problem/C) | 22-11-2022 |
-| - [ ] | [Orray-1742G](https://codeforces.com/contest/1742/problem/G) | 26-01-2023 |
-| - [ ] | [Absolute Sorting-1772D](https://codeforces.com/contest/1772/problem/D) | 26-01-2023 |
-| - [ ] | [(Very nice binary search problem)Tea Tasting-1795C](https://codeforces.com/contest/1795/problem/C) | 19-02-2023 |
-| - [ ] | [Min Max Sort-1792C](https://codeforces.com/contest/1792/problem/C) | 21-02-2023 |
-| - [ ] | [(Very nice binary search problem)Maximum Set-1796C](https://codeforces.com/contest/1796/problem/C) | 01-03-2023 |
-| - [ ] | [Scoring Subsequences-1795C](https://codeforces.com/contest/1794/problem/C) | 05-03-2023 |
-| - [ ] | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
-| - [ ] | [Sequence Master-1806C](https://codeforces.com/contest/1806/problem/C) | 24-03-2023 |
-| - [ ] | [Candy Store-1798C](https://codeforces.com/contest/1798/problem/C) | 28-03-2023 |
-| - [ ] | [Make It Permutation-1810C](https://codeforces.com/contest/1810/problem/C) | 01-04-2023 |
-| - [ ] | [Place for a Selfie-1805C](https://codeforces.com/contest/1805/problem/C) | 02-04-2023 |
-| - [ ] | [Living Sequence-1811E](https://codeforces.com/contest/1811/problem/E) | 05-04-2023 |
+| &#9744; | [Rotate-Image](https://leetcode.com/problems/rotate-image/) | Try transpose matrix approach |
+| &#9745; | [DIY Wooden Ladder-1197A](https://codeforces.com/contest/1197/problem/A) | 13-06-2022 |
+| &#9744; | [Elections-1593A](https://codeforces.com/contest/1593/problem/A) | 13-06-2022 |
+| &#9744; | [Even But Not Even-1291A](https://codeforces.com/contest/1291/problem/A) | 13-06-2022 |
+| &#9744; | [Circle Metro-1169A](https://codeforces.com/contest/1169/problem/A) | 12-07-2022 |
+| &#9744; | [Many Equal Substrings-1029A](https://codeforces.com/contest/1029/problem/A) | 28-07-2022 |
+| &#9744; | [Permutation Operations-1746C](https://codeforces.com/contest/1746/problem/C) | 21-10-2022 |
+| &#9744; | [Good Subarrays-1436C1](https://codeforces.com/problemset/problem/1736/C1) | 25-10-2022 |
+| &#9744; | [3Sum Closure-1698C](https://codeforces.com/problemset/problem/1698/C) | 28-10-2022 |
+| &#9744; | [Directional Increase-1693A](https://codeforces.com/problemset/problem/1693/A) | 08-11-2022 |
+| &#9744; | [Masha and a Beautiful Tree-1741D](https://codeforces.com/contest/1741/problem/D) | 17-11-2022 |
+| &#9744; | [Number Game-1741D](https://codeforces.com/contest/1749/problem/C) | 17-11-2022 |
+| &#9744; | [Bricks and Bags-1740C](https://codeforces.com/contest/1740/problem/C) | 22-11-2022 |
+| &#9744; | [Orray-1742G](https://codeforces.com/contest/1742/problem/G) | 26-01-2023 |
+| &#9744; | [Absolute Sorting-1772D](https://codeforces.com/contest/1772/problem/D) | 26-01-2023 |
+| &#9744; | [(Very nice binary search problem)Tea Tasting-1795C](https://codeforces.com/contest/1795/problem/C) | 19-02-2023 |
+| &#9744; | [Min Max Sort-1792C](https://codeforces.com/contest/1792/problem/C) | 21-02-2023 |
+| &#9744; | [(Very nice binary search problem)Maximum Set-1796C](https://codeforces.com/contest/1796/problem/C) | 01-03-2023 |
+| &#9744; | [Scoring Subsequences-1795C](https://codeforces.com/contest/1794/problem/C) | 05-03-2023 |
+| &#9744; | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
+| &#9744; | [Sequence Master-1806C](https://codeforces.com/contest/1806/problem/C) | 24-03-2023 |
+| &#9744; | [Candy Store-1798C](https://codeforces.com/contest/1798/problem/C) | 28-03-2023 |
+| &#9744; | [Make It Permutation-1810C](https://codeforces.com/contest/1810/problem/C) | 01-04-2023 |
+| &#9744; | [Place for a Selfie-1805C](https://codeforces.com/contest/1805/problem/C) | 02-04-2023 |
+| &#9744; | [Living Sequence-1811E](https://codeforces.com/contest/1811/problem/E) | 05-04-2023 |
 
 
 
