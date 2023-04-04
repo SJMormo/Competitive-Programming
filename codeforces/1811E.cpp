@@ -13,35 +13,22 @@ void fastio()
 	cout.tie(NULL);
 }
 
-string to_st(ll x)
-{
-	string s = "";
-
-	while (x) {
-		ll m = x % 10;
-		char n = m + 48;
-		s += n;
-		x /= 10;
-	}
-
-	reverse(s.begin(), s.end());
-	return s;
-}
-
 void solve()
 {
-	// string st;
-	// cin >> st;
+	ll n;
+	cin >> n;
 
-	int cnt = 0;
-	for (int i = 100; i < 1000; i++) {
-		string s = to_st(i);
-		for (auto it : s) {
-			if (it == '4')
-				cnt++;
-		}
+	vector<ll> ans;
+	while (n) {
+		ll res = (n % 9) + ((n % 9) > 3);
+		ans.push_back(res);
+		n /= 9;
 	}
-	cout << cnt << endl;
+
+	reverse(ans.begin(), ans.end());
+	for (auto it : ans)
+		cout << it;
+	cout << '\n';
 }
 
 int main()

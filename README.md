@@ -28,6 +28,7 @@
 | [Candy Store-1798C](https://codeforces.com/contest/1798/problem/C) | 28-03-2023 |
 | [Make It Permutation-1810C](https://codeforces.com/contest/1810/problem/C) | 01-04-2023 |
 | [Place for a Selfie-1805C](https://codeforces.com/contest/1805/problem/C) | 02-04-2023 |
+| [Living Sequence-1811E](https://codeforces.com/contest/1811/problem/E) | 05-04-2023 |
 
 
 
