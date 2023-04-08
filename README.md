@@ -30,6 +30,7 @@
 | &#9744; | [Place for a Selfie-1805C](https://codeforces.com/contest/1805/problem/C) | 02-04-2023 |
 | &#9744; | [Living Sequence-1811E](https://codeforces.com/contest/1811/problem/E) | 05-04-2023 |
 | &#9744; | [Decrease the Sum of Digits-1709D](https://codeforces.com/contest/1709/problem/D) | 07-04-2023 |
+| &#9744; | [Decrease the Sum of Digits-1709D](https://codeforces.com/contest/1300/problem/C) | 08-04-2023 |
 
 
 
