@@ -16,23 +16,19 @@ void fastio()
 
 void solve()
 {
-	string st;
-	cin >> st;
+	ll n;
+	cin >> n;
 
-	if (st == "^") {
-		cout << 1 << '\n';
-		return;
+	ll ans = 26ll;
+
+	// for (ll i = 5; i <= n; i++) {
+	// 	ans = ans - ((i - 1) * (i - 1)) + (i * i) + 2;
+	// }
+
+	if (n > 4) {
+		ans = 10 + n * n + 2 * (n - 4);
 	}
 
-	int ans = 0;
-	for (int i = 1; i < st.size(); i++) {
-		if (st[i] == '_' and st[i - 1] == '_')
-			ans++;
-	}
-	if (st[0] == '_')
-		ans++;
-	if (st[st.size() - 1] == '_')
-		ans++;
 	cout << ans << '\n';
 }
 int main()
