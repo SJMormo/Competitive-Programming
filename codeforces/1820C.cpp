@@ -19,7 +19,7 @@ int mex(std::map<int, int> mp)
 	int mex = 0;
 	for (auto it : mp) {
 		// cout << it.first << ' ' << it.second << endl;
-		if (it.second > 0 and it.first == mex) {
+		if (it.first == mex) {
 			mex++;
 		}
 		else break;
@@ -38,6 +38,7 @@ void solve()
 		mp[v[i]]++;
 	}
 
+
 	int curr_mex = mex(mp);
 
 	if (curr_mex == 0) {
@@ -45,38 +46,32 @@ void solve()
 		return;
 	}
 
-	// cout << curr_mex << endl;
-	if (mp[curr_mex + 1] == 0) {
-		int mx = *max_element(v.begin(), v.end());
-		mp[mx]--;
-		mp[curr_mex]++;
+	// if curr_mex+1 exists
+	if (mp.find(curr_mex + 1) != mp.end()) {
+		int pos1 = -1, pos2 = -1;
+		for (int i = 0; i < n; i++) {
+			if (v[i] == curr_mex + 1) {
+				if (pos1 == -1) pos1 = i;
+				pos2 = i;
+			}
+		}
+		for (int i = pos1; i <= pos2; i++) v[i] = curr_mex;
+
+		mp.clear();
+		for (auto it : v) mp[it]++;
+
+		int now = mex(mp);
+		cout << (curr_mex + 1 == now ? "Yes\n" : "No\n");
 	}
 	else {
-		int x = curr_mex + 1;
-		// cout << x << endl;
-		int pos = -1;
-		for (int i = 0; i < n; i++) {
-			if (v[i] == x) {
-				pos = i;
-				break;
+		for (auto it : mp) {
+			if (it.second > 1 or (it.first > curr_mex and it.second > 0)) {
+				cout << "Yes\n";
+				return;
 			}
 		}
-
-		// cout << pos << endl;
-
-		for (int i = pos; i < n; i++) {
-			if (v[i] != x)
-				break;
-			else {
-				mp[x]--;
-				mp[curr_mex]++;
-			}
-		}
+		cout << "No\n";
 	}
-	int now = mex(mp);
-	if (now == curr_mex + 1) cout << "Yes\n";
-	else cout << "No\n";
-
 }
 int main()
 {
