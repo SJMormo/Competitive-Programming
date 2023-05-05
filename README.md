@@ -23,7 +23,6 @@
 | &#9744; | [Min Max Sort-1792C](https://codeforces.com/contest/1792/problem/C) | 21-02-2023 |
 | &#9744; | [(Very nice binary search problem)Maximum Set-1796C](https://codeforces.com/contest/1796/problem/C) | 01-03-2023 |
 | &#9744; | [Scoring Subsequences-1795C](https://codeforces.com/contest/1794/problem/C) | 05-03-2023 |
-| &#9744; | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
 | &#9744; | [Sequence Master-1806C](https://codeforces.com/contest/1806/problem/C) | 24-03-2023 |
 | &#9744; | [Candy Store-1798C](https://codeforces.com/contest/1798/problem/C) | 28-03-2023 |
 | &#9744; | [Make It Permutation-1810C](https://codeforces.com/contest/1810/problem/C) | 01-04-2023 |
@@ -32,6 +31,7 @@
 | &#9744; | [Decrease the Sum of Digits-1709D](https://codeforces.com/contest/1709/problem/D) | 07-04-2023 |
 | &#9744; | [Decrease the Sum of Digits-1709D](https://codeforces.com/contest/1300/problem/C) | 08-04-2023 |
 | &#9744; | [2606. Find the Substring With Maximum Cost](https://leetcode.com/contest/biweekly-contest-101/problems/find-the-substring-with-maximum-cost/) | 14-04-2023 |
+| &#9744; | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
 
 
 
