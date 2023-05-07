@@ -32,6 +32,7 @@
 | &#9744; | [Decrease the Sum of Digits-1709D](https://codeforces.com/contest/1300/problem/C) | 08-04-2023 |
 | &#9744; | [2606. Find the Substring With Maximum Cost](https://leetcode.com/contest/biweekly-contest-101/problems/find-the-substring-with-maximum-cost/) | 14-04-2023 |
 | &#9744; | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
+| &#9744; | [Unforgivable Curse-1800E](https://codeforces.com/contest/1800/problem/E) | 23-03-2023 |
 
 
 

@@ -16,44 +16,22 @@ void fastio()
 
 void solve()
 {
-	int n;
-	cin >> n;
+	int n; cin >> n;
 
-	vector<int> one, two, both;
+	std::map<string, int> mp;
+	mp["00"] = mp["01"] = mp["10"] = mp["11"] = 1e6;
+	int ans = 1e6;
 
-	for (int i = 0; i < n; i++) {
-		int m; string st;
-		cin >> m >> st;
+	while (n--) {
+		int x;
+		string st;
+		cin >> x >> st;
 
-		if (st == "10") one.push_back(m);
-		else if (st == "01") two.push_back(m);
-		else if (st == "11") both.push_back(m);
+		mp[st] = min(mp[st], x);
+		ans = min(mp["11"], mp["01"] + mp["10"]);
 	}
 
-
-	if (one.size() == 0 and two.size() == 0 and both.size() == 0) {
-		cout << -1 << '\n';
-		return;
-	}
-	else if (both.size() == 0 and (one.size() != 0 and two.size() != 0)) {
-		sort(one.begin(), one.end());
-		sort(two.begin(), two.end());
-		cout << one[0] + two[0] << '\n';
-	}
-	else if (both.size() == 0 and (one.size() == 0 or two.size() == 0)) {
-		cout << -1 << '\n';
-	}
-	else if (one.size() == 0 or two.size() == 0) {
-		sort(both.begin(), both.end());
-		cout << both[0] << '\n';
-	}
-	else if (one.size() != 0 and two.size() != 0 and both.size() != 0) {
-		sort(one.begin(), one.end());
-		sort(two.begin(), two.end());
-		sort(both.begin(), both.end());
-		cout << min(both[0], one[0] + two[0]) << '\n';
-	}
-	else cout << -1 << '\n';
+	cout << (ans == 1e6 ? -1 : ans) << '\n';
 }
 int main()
 {
