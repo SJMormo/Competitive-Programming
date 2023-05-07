@@ -30,17 +30,20 @@ void solve()
 
 	std::map<int, int> cnt;
 	for (auto it : mp) {
-		cout << it.first << ' ' << it.second << endl;
+		// cout << it.first << ' ' << it.second << endl;
 		if (it.second > 1) {
 			cnt[it.second]++;
 		}
 	}
 
-	int one, two;
+	int one = -1, two;
 	for (auto it : cnt) {
+		// cout << it.first << ' ' << it.second << endl;
 		if (it.second == 1) one = it.first;
 		else two = it.first - 1;
 	}
+
+	if (one == -1) one = two + 1;
 
 	cout << one << ' ' << two << '\n';
 }
