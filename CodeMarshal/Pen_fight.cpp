@@ -38,7 +38,8 @@ void join(int u, int v)
 	u = findParent(u);
 	v = findParent(v);
 
-	parent[v] = u, nodeRank[u]++;
+	parent[v] = u, nodeRank[u] += nodeRank[v];
+	nodeRank[v] = 0;
 }
 
 void solve()
