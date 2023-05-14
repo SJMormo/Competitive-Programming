@@ -8,20 +8,31 @@ public:
         int track = 0;
         vector<vector<string>> ans;
         for (int i = 0; i < strs.size(); i++) {
-            string s = strs[i];
-            sort(s.begin(), s.end());
-            if (mp.find(s) == mp.end()) {
+            string key = getKey(strs[i]);
+            if (mp.find(key) == mp.end()) {
                 vector<string> st;
                 st.push_back(strs[i]);
                 ans.push_back(st);
-                mp[s] = track;
+                mp[key] = track;
                 track++;
             }
-            else {
-                int place = mp[s];
-                ans[place].push_back(strs[i]);
-            }
+            else
+                ans[mp[key]].push_back(strs[i]);
         }
         return ans;
+    }
+
+private:
+    string getKey(string s) {
+        vector<int> cnt(26, 0);
+        for (int i = 0; i < s.size(); i++) {
+            cnt[s[i] - 'a']++;
+        }
+        string res = "";
+        for (int i = 0; i < 26; i++) {
+            char a = cnt[i] + '0';
+            res += a;
+        }
+        return res;
     }
 };
