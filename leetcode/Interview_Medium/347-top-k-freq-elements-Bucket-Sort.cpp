@@ -1,3 +1,5 @@
+// O(n)
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -16,14 +18,16 @@ public:
             bucket[it.second].push_back(it.first);
         }
         for (int i = n; i >= 0; i--) {
-            for (int j = 0; j < bucket[i].size(); j++) {
-                ans.push_back(bucket[i][j]);
-                k--;
-                if (k == 0)
-                    break;
-            }
             if (k == 0)
                 break;
+            if (!bucket[i].empty()) {
+                for (int j = 0; j < bucket[i].size(); j++) {
+                    ans.push_back(bucket[i][j]);
+                    k--;
+                    if (k == 0)
+                        break;
+                }
+            }
         }
         return ans;
     }
