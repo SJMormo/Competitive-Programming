@@ -4,58 +4,26 @@ using namespace std;
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
-        vector<int> track(10, 0);
-        // check row
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                char x = board[i][j];
-                if (x != '.') {
-                    track[x - '1']++;
-                    if (track[x - '1'] > 1)
-                        return false;
-                }
-            }
-            for (int i = 0; i < 10; i++)
-                track[i] = 0;
-        }
+        int n = 9;
+        bool row[9][9] = {false};
+        bool col[9][9] = {false};
+        bool sub[9][9] = {false};
 
-        // check col
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                char x = board[j][i];
-                if (x != '.') {
-                    track[x - '1']++;
-                    if (track[x - '1'] > 1)
-                        return false;
-                }
-            }
-            for (int i = 0; i < 10; i++)
-                track[i] = 0;
-        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == '.')
+                    continue;
+                int indx = board[i][j] - '1';
+                int area = i / 3 * 3 + j / 3;
 
-        // check sub box
-        for (int i = 0; i < 9; i += 3) {
-            for (int j = 0; j < 9; j += 3) {
-                if (!traverse(board, i, j))
+                if (row[i][indx] or col[j][indx] or sub[area][indx])
                     return false;
-            }
-        }
-        return true;
-    }
-private:
-    bool traverse(vector<vector<char>> board, int add_i, int add_j) {
-        vector<int> track(10, 0);
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                char x = board[i + add_i][j + add_j];
-                if (x != '.') {
-                    track[x - '1']++;
-                    if (track[x - '1'] > 1)
-                        return false;
-                }
-            }
-        }
 
+                row[i][indx] = true;
+                col[j][indx] = true;
+                sub[area][indx] = true;
+            }
+        }
         return true;
     }
 };
