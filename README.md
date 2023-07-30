@@ -1,6 +1,6 @@
 # Competitive Programming
 
-### Re-try Re-try Re-try...
+## Re-try Re-try Re-try...
 
 | Tick | Problem | Date (DD-MM-YYYY) |
 | :-:  | :-: | :-: |
@@ -34,9 +34,14 @@
 | &#9744; | [Mex Master-1806B (Chi!)](https://codeforces.com/contest/1806/problem/B) | 23-03-2023 |
 | &#9744; | [Unforgivable Curse-1800E](https://codeforces.com/contest/1800/problem/E) | 23-03-2023 |
 
+## Topic Wise Problems
+### Binary Search
+1. [Cardboard for Pictures](https://codeforces.com/contest/1850/problem/E)
+### Graph Traversal
+1. [The Lakes](https://codeforces.com/contest/1829/problem/E)
 
 
-### Very Nice Techniques
+## Very Nice Techniques
 
 | Issue | Resource/Idea | Related Problem | 
 | :-: | :-: | :-: |
