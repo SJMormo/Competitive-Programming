@@ -14,9 +14,9 @@ int main()
 	Node *second = NULL;
 	Node *third = NULL;
 
-	head = (Node*)malloc(sizeof(Node)); // Node type memory location declare
-	second = (Node*)malloc(sizeof(Node));
-	third = (Node*)malloc(sizeof(Node));
+	head = new Node(); // Node type memory location declare
+	second = new Node();
+	third = new Node();
 
 	head->data = 1; // (*head).data is equivalent to head->data
 	head->Next = second;
