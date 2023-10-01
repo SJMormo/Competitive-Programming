@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Node {
@@ -15,14 +15,25 @@ Node* newNode(int data)
     return temp;
 }
 
-void printPreOrder(Node *node)
+void printLevelOrder(Node *node)
 {
     if(node == NULL)
         return;
 
-    printPreOrder(node->left);
-    printPreOrder(node->right);
-    cout << node->data << ' ';
+    queue<Node*> Q;
+    Q.push(node);
+
+    while(!Q.empty())
+    {
+        Node *temp = Q.front();
+        cout << temp->data << ' ';
+        Q.pop();
+
+        if(temp->left != NULL)
+            Q.push(temp->left);
+        if(temp->right != NULL)
+            Q.push(temp->right);
+    }
 }
 
 int main()
@@ -36,7 +47,7 @@ int main()
     root->right->left = newNode(6);
     root->right->right = newNode(7);
 
-    printPreOrder(root);
+    printLevelOrder(root);
 
     return 0;
 }
